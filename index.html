@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+  <html lang="id">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGOYO YOGYAKARTA</title>
+
+  <meta name="description" content="AGOYO Coffee — Coffe Home dari keluarga Hayyan di Godean, Sleman, Yogyakarta. Kopi susu, matcha, cokelat premium. Buka 18.00–22.00. Pesan via WhatsApp, bisa delivery area Godean.">
+  <meta name="theme-color" content="#d4af37">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="kopi godean, coffee sleman, Coffe Home yogyakarta, kopi susu gula aren, agoyo coffee, kopi murah yogyakarta">
+
+  <meta property="og:title" content="AGOYO Coffee — Coffe Home Godean, Sleman">
+  <meta property="og:description" content="Kopi specialty dari keluarga Hayyan. Ringan, segar, dan jujur rasanya. Buka tiap hari 18.00–22.00. Bisa delivery area Godean!">
+  <meta property="og:image" content="https://agoyo.id/agoyo1.png">
+  <meta property="og:url" content="https://agoyo.id">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="id_ID">
+
+  <link rel="icon" type="image/png" href="logo.png.jpg">
+  <link rel="apple-touch-icon" href="logo.png.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+
+:root{
+    --cream:#f6f1e9;
+    --ink:#1a1a1a;
+  --gold:#b8892f;
+    }
+
+body{
+    font-family:'Space Mono', monospace;
+  color:var(--ink);
+  background:var(--cream);
+  overflow-x:hidden;
+}
+
+.navbar{
+    position:sticky;top:0;left:0;width:100%;z-index:999;
+  background:var(--cream);
+  border-bottom:1px solid var(--ink);
+}
+.nav-container{
+    max-width:1200px;margin:0 auto;padding:0 20px;
+  height:64px;display:flex;align-items:center;justify-content:space-between;
+}
+.nav-logo{font-size:1.3rem;font-weight:700;color:var(--ink);letter-spacing:3px;text-decoration:none;}
+.nav-links{display:flex;align-items:center;gap:24px;list-style:none;}
+.nav-links a{color:var(--ink);text-decoration:none;font-size:.8rem;letter-spacing:1px;}
+.nav-links a:hover{color:var(--gold);}
+.btn{
+  border:1px solid var(--ink);
+  background:transparent;
+  color:var(--ink);
+  padding:10px 20px;
+  font-family:inherit;
+  font-size:.8rem;
+  letter-spacing:1px;
+  cursor:pointer;
+  text-decoration:none;
+  display:inline-block;
+}
+.btn:hover{background:var(--ink);color:var(--cream);}
+.btn-solid{background:var(--ink);color:var(--cream);}
+.btn-solid:hover{background:var(--gold);border-color:var(--gold);color:#fff;}
+
+.hero{
+    text-align:center;
+  padding:100px 20px 60px;
+  max-width:800px;
+  margin:0 auto;
+                }
+.hero h1{
+    font-size:2.8rem;
+  letter-spacing:6px;
+  margin-bottom:10px;
+}
+.hero .tagline{
+  color:var(--gold);
+  letter-spacing:3px;
+  font-size:.9rem;
+  margin-bottom:24px;
+}
+.hero p{
+    font-size:.95rem;
+  line-height:1.7;
+  margin-bottom:28px;
+}
+.hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+.badges{
+    display:flex;flex-wrap:wrap;justify-content:center;gap:14px;
+  padding:0 20px 60px;
+  max-width:900px;margin:0 auto;
+}
+.badge{
+    border:1px solid var(--ink);
+  padding:8px 16px;
+  font-size:.75rem;
+  letter-spacing:.5px;
+}
+
+section{padding:60px 20px;max-width:1100px;margin:0 auto;}
+h2{
+    text-align:center;
+  font-size:1.5rem;
+  letter-spacing:3px;
+  margin-bottom:40px;
+}
+
+.about-text{max-width:640px;margin:0 auto 40px;text-align:center;font-size:.9rem;line-height:1.8;}
+.ssm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;}
+.ssm-card{border:1px solid var(--ink);padding:24px;text-align:center;}
+.ssm-card .icon{font-size:1.8rem;margin-bottom:10px;}
+.ssm-card h3{font-size:.95rem;letter-spacing:2px;margin-bottom:8px;}
+.ssm-card p{font-size:.8rem;}
+
+.menu-grid{
+    display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  }
+.menu-card{
+    border:1px solid var(--ink);
+  background:#fff;
+    padding:20px;
+  text-align:center;
+}
+.menu-card .img-placeholder{
+    height:140px;
+  background:#eadfc8;
+    margin-bottom:14px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.75rem;color:#7a6a4a;
+}
+.menu-card h3{font-size:.95rem;margin-bottom:6px;}
+.menu-card .price{color:var(--gold);font-weight:700;font-size:.85rem;}
+
+.location-grid{
+    display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:24px;
+  margin-bottom:40px;
+  }
+.location-item{border:1px solid var(--ink);padding:20px;}
+.location-item .label{font-weight:700;font-size:.8rem;letter-spacing:1px;margin-bottom:8px;}
+.location-item p{font-size:.85rem;line-height:1.6;}
+.location-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+.payment-list{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+.social-grid{
+    display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  }
+.social-card{border:1px solid var(--ink);padding:24px;text-align:center;}
+.social-card h3{font-size:.9rem;margin-bottom:8px;}
+.social-card p{font-size:.8rem;margin-bottom:14px;}
+
+footer{
+    background:var(--ink);
+  color:var(--cream);
+  text-align:center;
+  padding:36px 20px;
+  font-size:.8rem;
+}
+footer a{color:var(--cream);margin:0 8px;text-decoration:none;}
+
+@media(max-width:640px){
+  .nav-links{display:none;}
+  .hero h1{font-size:2rem;}
+  }
+</style>
+  </head>
+  <body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">AGOYO</a>
+      <ul class="nav-links">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="#cerita">Cerita Kami</a></li>
+      </ul>
+      <a href="https://wa.me/62895395654444" class="btn btn-solid">Pesan via WhatsApp</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>AGOYO</h1>
+    <div class="tagline">STOP &bull; SIP &bull; SMILE</div>
+    <p>AGOYO lahir dari keluarga, bukan dari kopi. Semuanya bermula dari sebuah keluarga yang ingin belajar, mencoba, gagal, lalu mencoba lagi — dari rasa penasaran terhadap kopi, hingga keinginan sederhana untuk menyajikan kenyamanan, proses, dan senyuman.</p>
+    <div class="hero-buttons">
+      <a href="menu.html" class="btn btn-solid">Lihat Menu</a>
+      <a href="https://wa.me/62895395654444" class="btn">Hubungi Kami</a>
+    </div>
+  </section>
+
+  <div class="badges">
+    <div class="badge">Coffee Home</div>
+    <div class="badge">Delivery Area Godean</div>
+  <div class="badge">Buka 18.00–22.00</div>
+    <div class="badge">Family Owned</div>
+  </div>
+
+  <section id="tentang">
+    <h2>KAMI BUKAN SEKADAR KEDAI KOPI</h2>
+    <p class="about-text">
+      Hari ini kami masih terus belajar. Setiap resep, setiap eksperimen, dan setiap gelas adalah bagian dari perjalanan yang belum selesai. Bagi kami, kopi bukan tujuan akhirnya — kopi hanyalah perantara untuk menghadirkan jeda, percakapan, dan senyuman.
+    </p>
+    <div class="ssm-grid">
+      <div class="ssm-card">
+        <div class="icon">🛑</div>
+        <h3>STOP</h3>
+        <p>Beri ruang sejenak</p>
+    </div>
+    <div class="ssm-card">
+      <div class="icon">☕</div>
+      <h3>SIP</h3>
+        <p>Nikmati perjalanan</p>
+      </div>
+      <div class="ssm-card">
+        <div class="icon">😊</div>
+        <h3>SMILE</h3>
+        <p>Syukuri hal sederhana</p>
+    </div>
+  </div>
+</section>
+
+<section id="lokasi">
+  <h2>KUNJUNGI KAMI LANGSUNG ATAU PESAN DELIVERY</h2>
+  <div class="location-grid">
+    <div class="location-item">
+      <div class="label">ALAMAT</div>
+      <p>Jl. Griya Palem Indah No.B11<br>Area Sawah, Sidokarto<br>Kec. Godean, Kab. Sleman<br>D.I. Yogyakarta 55264</p>
+      </div>
+      <div class="location-item">
+        <div class="label">JAM BUKA</div>
+        <p>Setiap Hari<br>18.00 – 22.00 WIB</p>
+      </div>
+      <div class="location-item">
+        <div class="label">DELIVERY</div>
+        <p>Tersedia untuk area sekitar Godean.<br>Hubungi kami via WhatsApp untuk info lebih lanjut.</p>
+      </div>
+      <div class="location-item">
+        <div class="label">KONTAK</div>
+        <p>WhatsApp: +62 895-3956-54444</p>
+      </div>
+    </div>
+    <div class="location-actions">
+      <a href="#" class="btn">Buka Google Maps</a>
+      <a href="https://wa.me/62895395654444" class="btn btn-solid">Tanya via WhatsApp</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>METODE PEMBAYARAN</h2>
+    <div class="payment-list">
+      <div class="badge">BNI Transfer</div>
+      <div class="badge">GoPay</div>
+      <div class="badge">Tunai</div>
+    </div>
+  </section>
+
+  <section id="cerita">
+    <h2>IKUTI PERJALANAN KELUARGA HAYYAN DI SOSIAL MEDIA</h2>
+    <div class="social-grid">
+      <div class="social-card">
+        <h3>Ikuti Perjalanan AGOYO</h3>
+        <p>YouTube — Behind the scenes &amp; cerita keluarga</p>
+      <a href="#" class="btn">Kunjungi</a>
+    </div>
+    <div class="social-card">
+      <h3>Cerita yang Masih Berjalan</h3>
+        <p>TikTok — Konten harian &amp; proses pembuatan kopi</p>
+        <a href="#" class="btn">Kunjungi</a>
+      </div>
+      <div class="social-card">
+        <h3>AGOYO Sesungguhnya</h3>
+        <p>Instagram — Foto produk &amp; update terbaru</p>
+      <a href="#" class="btn">Kunjungi</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 AGOYO Coffee. Semua hak dilindungi.</p>
+  <div style="margin-top:10px;">
+    <a href="https://wa.me/62895395654444">Kontak</a>
+    <a href="#">Kebijakan Privasi</a>
+      <a href="#">Syarat Layanan</a>
+    </div>
+  </footer>
+
+  </body>
+  </html>
+  </body>
+  </html>
